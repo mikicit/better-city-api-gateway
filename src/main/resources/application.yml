@@ -16,5 +16,22 @@ spring:
           uri: http://notification-service-service.default.svc.cluster.local:8080
           predicates:
             - Path=/api/v1/notifications/**
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins:
+              - "*"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - PATCH
+              - DELETE
+            allowedHeaders:
+              - Origin
+              - X-Auth-Token
+              - Content-Type
+              - Accept
+              - Authorization
 server:
   port: 8080
