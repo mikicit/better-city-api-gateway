@@ -29,9 +29,13 @@ spring:
               - DELETE
             allowedHeaders:
               - Origin
-              - X-Auth-Token
               - Content-Type
               - Accept
+              - User-Agent
+              - Accept-Encoding
+              - Connection
+              - Host
+              - Cache-Control
               - Authorization
 server:
   port: 8080
