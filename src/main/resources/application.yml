@@ -28,9 +28,14 @@ spring:
               - PATCH
               - DELETE
             allowedHeaders:
-                - Origin
-                - Content-Type
-                - Accept
-                - Authorization
+              - Origin
+              - Content-Type
+              - Accept
+              - User-Agent
+              - Accept-Encoding
+              - Connection
+              - Host
+              - Cache-Control
+              - Authorization
 server:
   port: 8080
